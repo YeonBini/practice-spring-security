@@ -27,12 +27,12 @@ public class SampleController {
 
     @GetMapping("/dashboard")
     public String dashboard(Model model, Principal principal) {
-        model.addAttribute("message", "hello dashboard for" +principal.getName() );
+        model.addAttribute("message", "hello dashboard for " +principal.getName() );
         return "dashboard";
     }
     @GetMapping("/admin")
     public String admin(Model model, Principal principal) {
-        model.addAttribute("message", "hello admin for" + principal.getName());
+        model.addAttribute("message", "hello admin for " + principal.getName());
         return "admin";
     }
 
